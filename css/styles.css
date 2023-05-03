@@ -113,8 +113,33 @@ ul {
 .header__contact__item a{
     color: #757575;
 }
-.header__contact__link:hover, .header__contact__link:focus {
+.header__contact__link:before {
+    display: inline-flex;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/images/envelope.svg);
+    background-position: center;
+}
+.header__contact__tel:before {
+    display: inline-flex;
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/images/Vectortel.svg);
+    background-position: center;
+}
+.header__contact__item .header__contact__link {
     color: #2196F3
+}
+.header__contact__link:focus {
+    
 }
 /* 2. Hero*/
 .hero {
