@@ -356,9 +356,6 @@ ul {
 .samples__item {
     display: block;
     width: calc((100% - 60px) / 3 );
-
-
-
     border: 1px solid #EEEEEE;
 }
 .samples__item:nth-child(3n) {
