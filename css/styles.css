@@ -101,10 +101,11 @@ ul {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
 }
 .header__contact__item {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
@@ -113,7 +114,15 @@ ul {
 }
 .header__contact__item a{
     color: #757575;
+    fill: #757575;
 }
+.contact__icon {
+    margin-right: 10px;
+}
+/* .mail__image {
+    width: 16px;
+    height: 12px;
+} */
 /* .header__contact__link:before {
     display: inline-flex;
     content: "";
@@ -137,12 +146,14 @@ ul {
     background-position: center;
 } */
 
-.header__contact__item a:hover {
-    color: #2196F3
+.header__contact__item .header__contact__link:hover {
+    color: #2196F3;
+    fill: #2196F3;
 }
 .header__contact__item:focus{
     color: #2196F3
 }
+
 /* 2. Hero*/
 .hero {
     max-width: 1600px;
@@ -210,6 +221,18 @@ ul {
 }
 .content__item:nth-child(4n) {
     margin-right: 0px;
+}
+.content__icon {
+    display: block;
+    justify-content: center;
+    align-items: center;
+        
+    
+        
+    margin-bottom: 30px;
+    object-fit: none;
+    border-radius: 4px;
+    background: #F5F4FA;
 }
 /* 3.2 content text */
 .content__subtitle {
