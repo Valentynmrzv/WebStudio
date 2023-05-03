@@ -91,8 +91,9 @@ ul {
 }
 .header__nav__list .header__nav__link {
     color: #2196F3;
+    fill: #2196F3;
 }
-.header__nav__link:focus{
+.header__nav__link:focus {
     color: #2196F3
 }
 /* 1.2 header contact */
@@ -113,7 +114,7 @@ ul {
 .header__contact__item a{
     color: #757575;
 }
-.header__contact__link:before {
+/* .header__contact__link:before {
     display: inline-flex;
     content: "";
     width: 16px;
@@ -134,12 +135,13 @@ ul {
     background-size: contain;
     background-image: url(/images/Vectortel.svg);
     background-position: center;
-}
-.header__contact__item .header__contact__link {
+} */
+
+.header__contact__item a:hover {
     color: #2196F3
 }
-.header__contact__link:focus {
-    
+.header__contact__item:focus{
+    color: #2196F3
 }
 /* 2. Hero*/
 .hero {
