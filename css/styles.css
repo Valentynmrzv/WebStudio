@@ -118,14 +118,16 @@ ul {
 }
 /* 2. Hero*/
 .hero {
-    width: 1200px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-bottom: 47px;
     margin-left: auto;
     margin-right: auto;
-    background: rgb(65, 56, 121);
-    background: linear-gradient(152deg, rgba(65, 56, 121, 0.8714459416579132) 0%, rgba(2, 0, 36, 1) 67%);;
+    background: rgba(47, 48, 58, 0.4);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/background.jpg);
+    background-size: cover;
+    background-position: center;
     text-align: center;
 }
 .hero__title {
@@ -151,6 +153,7 @@ ul {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 .hero__button__order b{
         color: #FFFFFF;
