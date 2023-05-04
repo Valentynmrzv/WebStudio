@@ -105,16 +105,23 @@ ul {
     align-items: center;
 }
 .header__contact__item {
-    display: block;
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
     text-decoration: none;
+    align-items: baseline;
+    
+    justify-content: center;
 }
 .header__contact__item a{
     color: #757575;
     fill: #757575;
+}
+.header__contact__link, .header__contact__tel {
+    display: flex;
+    align-items: center;
 }
 .contact__icon {
     margin-right: 10px;
