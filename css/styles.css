@@ -12,6 +12,7 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 h1,
@@ -320,13 +321,49 @@ ul {
     color: #212121;
 }
 .team__text {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     color: #757575;
 }
+.team__social__link {
+    display: block;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+}
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    margin: 0px;
+}
+.social__item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
 
+.social__item__icon {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+
+
+.social__item__link:hover,
+.social__item__link:focus {
+    background-color: #2196F3;
+}
+.social__item__link:hover .social__item__icon,
+.social__item__link:focus .social__item__icon {
+    fill: #FFFFFF;
+}
+/* footer */
 .footer {
     background-color: #2F303A;
     margin: 0px;
