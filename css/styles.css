@@ -273,6 +273,7 @@ color: #2196F3;
 .work__item {
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .work__item > .work__item__label {
@@ -283,6 +284,8 @@ color: #2196F3;
     padding-top: 27px;
     padding-bottom: 27px;
     width: 370px;
+
+    z-index: 2;
 
     transform: translateY(100%);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -573,6 +576,8 @@ color: #2196F3;
 .samples__item__wrapper {
     position: relative;
     overflow: hidden;
+
+    z-index: 1;
 }
 .samples__item__wrapper > .samples__item__label {
     position: absolute;
@@ -580,6 +585,8 @@ color: #2196F3;
     left: 0;
     margin: 0;
     padding: 63px 24px;
+
+    z-index: 2;
 
     transform: translateY(100%);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
