@@ -80,22 +80,23 @@ ul {
     padding-left: 93px;
 }
 .header__nav__item{
-    color: #212121;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    transition-property: transform;
+    transition-duration: 300ms;
 }
-.header__nav__item a{
+.header__nav__link {
     color: #212121;
 }
-.header__nav__list .header__nav__link {
-    color: #2196F3;
-    fill: #2196F3;
+
+.header__nav__item:hover,
+.header__nav__item:focus{
+    transform: scale(1.2);
 }
-.header__nav__link:focus {
-    color: #2196F3
+.header__nav__link:hover {
+color: #2196F3;
 }
 /* 1.2 header contact */
 .header__contact__list {
@@ -116,9 +117,11 @@ ul {
     
     justify-content: center;
 }
-.header__contact__item a{
+.header__contact__link {
     color: #757575;
     fill: #757575;
+    transition-property: transform;
+    transition-duration: 300ms;
 }
 .header__contact__link, .header__contact__tel {
     display: flex;
@@ -127,40 +130,15 @@ ul {
 .contact__icon {
     margin-right: 10px;
 }
-/* .mail__image {
-    width: 16px;
-    height: 12px;
-} */
-/* .header__contact__link:before {
-    display: inline-flex;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(/images/envelope.svg);
-    background-position: center;
-}
-.header__contact__tel:before {
-    display: inline-flex;
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(/images/Vectortel.svg);
-    background-position: center;
-} */
 
-.header__contact__item .header__contact__link:hover {
+
+.header__contact__link:hover,
+.header__contact__link:focus {
     color: #2196F3;
     fill: #2196F3;
+    transform: scale(1.2);
 }
-.header__contact__item:focus{
-    color: #2196F3
-}
+
 
 /* 2. Hero*/
 .hero {
@@ -283,6 +261,29 @@ ul {
     flex-wrap: nowrap;
     gap: 30px;
 }
+.work__item {
+    position: relative;
+}
+
+.work__item > .work__item__label {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 370px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
+}
+
 /* 5. Our team */
 .team__boarder{
     background-color: #F5F4FA;
