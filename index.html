@@ -388,42 +388,38 @@
         <div class="modal">
             <button class="modal__button" data-modal-close>
                 <svg class="modal__icon" width="11" height="11">
-                <use href="./images/sprite.svg#icon-x-close">
-
-                </use>
-            </svg>
-        </button>
+                <use href="./images/sprite.svg#icon-x-close"></use>
+                </svg>
+            </button>
         <div class="contact-form">
-            <form action="">
-                <fieldset class="contact-form-group">
-                    <legend class="group__title">Оставьте свои данные, мы вам перезвоним</legend>
-                    <label for="" class="contact-form__label">
-                        Имя
-                        <input type="text" name="firstName" autofocus />
-                    </label>
-                    <label for="" class="contact-form__label">
-                        Телефон
-                        <input type="tel" name="phone" autofocus />
-                    </label>
-                    <label for="" class="contact-form__label">
-                        Почта
-                        <input type="email" name="email" autofocus />
-                    </label>
-                    <label class="contact-form__label">
-                        Комментарий
-                        <textarea name="user-message" placeholder="Введите текст"></textarea>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="" value=""/>
-                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-                    </label>
-                </fieldset>
-            </form>
-            <button type="send-form" class="button-form">Отправить</button>
+            <form action="" class="modal-form">
+                <b>Оставьте свои данные, мы вам перезвоним</b>
+                <label for="" class="contact-form__label">
+                    Имя
+                    <input type="text" name="firstName" class="contact-form__input" autofocus required minlength="4">
+                    <svg class="modal-form__icon" width="12" height="12">
+                        <use href="./images/sprite.svg#icon-user"></use>
+                    </svg>
+                </label>
+                <label for="" class="contact-form__label">
+                    Телефон
+                    <input type="tel" name="phone" class="contact-form__input" autofocus required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-000-00-00">
+                </label>
+                <label for="" class="contact-form__label">
+                    Почта
+                    <input type="email" name="email" class="contact-form__input" autofocus />
+                </label>
+                <label class="contact-form__label">
+                    Комментарий
+                    <textarea name="user-message" class="contact-form__massege" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" name="user-term" value="" />
+                <label>
+                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                </label>
+                <button type="submit" class="button-form">Отправить</button>
+            </form>   
         </div>
-        </div>
-        
-    </div>
     <script src="./js/modal.js"></script>
 </body>
 
