@@ -383,10 +383,11 @@
             </div>
         </div>
         <div class="footer__subscribe">
-            <form action="">
-                <b>Подпишитесь на рассылку</b>
+            <b>Подпишитесь на рассылку</b>
+            <div class="footer__subscribe__wrapper"></div>
+            <form class="footer__subscribe__form">
                 <label for="">
-                    <input type="email" name="email" class="footer__subscribe__input" autofocus />
+                    <input type="email" name="email" class="footer__subscribe__input" placeholder="E-mail" autofocus required/>
                 </label>
                 <button type="submit" class="footer__subscribe__button">Подписаться
                     <svg class="footer__button__icon">
@@ -396,6 +397,7 @@
         </div>
        </div>
     </footer>
+    
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__button" data-modal-close>
