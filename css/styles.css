@@ -589,6 +589,13 @@ color: #2196F3;
 
     text-align: center;   
 }
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-form b{
+    text-align: center;
+}
 .contact-form {
     margin: 40px;
         
