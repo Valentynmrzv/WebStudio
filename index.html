@@ -66,7 +66,7 @@
         
 
         <section class=content_border>
-            <h2 class="none">Prioriti</h2>
+            <h2 class="visually-hidden">Prioriti</h2>
             <div class="content container">
                 <ul class="content__list">
                     <li class="content__item">
@@ -382,6 +382,18 @@
                 </ul>
             </div>
         </div>
+        <div class="footer__subscribe">
+            <form action="">
+                <b>Подпишитесь на рассылку</b>
+                <label for="">
+                    <input type="email" name="email" class="footer__subscribe__input" autofocus />
+                </label>
+                <button type="submit" class="footer__subscribe__button">Подписаться
+                    <svg class="footer__button__icon">
+                    <use href="./images/sprite.svg#icon-send"></use>
+                </svg></button>
+            </form>
+        </div>
        </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -426,9 +438,9 @@
                     Комментарий
                     <textarea name="user-message" class="contact-form__massege" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" name="user-term" value="" />
-                <label>
-                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                <input type="checkbox" name="user-term" id="user-term" value="" class="modal-form-term visually-hidden"/>
+                <label for="user-term" class="modal-form-checkbox">
+                    Соглашаюсь с рассылкой и принимаю &nbsp;<a href="">Условия договора</a>
                 </label>
                 <button type="submit" class="button-form">Отправить</button>
             </form>   
