@@ -527,7 +527,7 @@ ul {
 }
 .client__item:hover,
 .client__item:focus {
-    border: 1px solid #var(--brand-color);
+    border: 1px solid var(--brand-color);
     transform: scale(1.1);
 }
 .client__link {
@@ -870,7 +870,7 @@ ul {
 }
 .modal-form-term:focus+.modal-form-checkbox::before,
 .modal-form-term:hover+.modal-form-checkbox::before {
-    box-shadow: 0 0 3px #var(--brand-color);
+    box-shadow: 0 0 3px var(--brand-color);
 }
 .modal-form-checkbox:hover{
     color: var(--brand-color);
@@ -907,6 +907,11 @@ ul {
 /* 1. header portfolio*/
 
 /* =====================2. button=================== */
+.button-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+}
 .button__list {
     padding-top: 100px;
     display: flex;
@@ -1010,7 +1015,7 @@ ul {
 }
 .samples__text {
     padding-bottom: 20px;
-    padding-left: 24px;r
+    padding-left: 24px;
     padding-right: 24px;
 
     font-size: 16px;
