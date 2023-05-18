@@ -1,3 +1,7 @@
+:root {
+
+}
+
 *,
 *::before,
 *::after {
@@ -33,33 +37,19 @@ ul {
     margin: 0px;
     padding: 0px;
 }
-.list{
+.list {
     list-style: none;
 }
 
-/* 1. header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__border {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
-}
 .container {
     width: 1200px;
-    margin:auto;
+    margin: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-/* 1.1 header navigation */
-.header__nav {
-    display: flex;
-    justify-content:space-evenly
-}
-.logo__link {
+
+/* ===============lOGO====================== */
+.logo-link {
     cursor: default;
     color: #000000;
     font-family: 'Raleway';
@@ -68,14 +58,14 @@ ul {
     font-size: 26px;
     line-height: 1.2;
 }
-.logo__link:hover {
+
+.logo-link:hover {
     animation-name: pulse;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 4;
     animation-direction: alternate;
 }
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -84,12 +74,13 @@ ul {
     25% {
         transform: scale(1.10)
     }
+
     50% {
         transform: scale(1.20);
     }
 
     75% {
-    transform: scale(1.10)
+        transform: scale(1.10)
     }
 
     100% {
@@ -97,10 +88,45 @@ ul {
     }
 }
 
-.logo__link__accent {
+.logo-link__accent {
     color: #2196F3;
 }
-.header__nav__list {
+/* ============================================= */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+/* ============================================================ */
+
+/* 1. ===============header=============== */
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 1.1 header navigation */
+.header-nav {
+    display: flex;
+    justify-content:space-evenly
+}
+.header-nav__list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -108,7 +134,7 @@ ul {
     align-items: center;
     padding-left: 93px;
 }
-.header__nav__item{
+.header-nav__item{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
@@ -116,60 +142,59 @@ ul {
     transition-property: transform;
     transition-duration: 300ms;
 }
-.header__nav__link {
-    color: #212121;
-}
-
-.header__nav__item:hover,
-.header__nav__item:focus{
+.header-nav__item:hover,
+.header-nav__item:focus {
     transform: scale(1.2);
 }
-.header__nav__link:hover {
-color: #2196F3;
+.header-nav__link {
+    color: #212121;
 }
+.header-nav__link:hover {
+    color: #2196F3;
+}
+
 /* 1.2 header contact */
-.header__contact__list {
+.header-contact__list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     gap: 30px;
     align-items: center;
 }
-.header__contact__item {
+.header-contact__item {
     display: flex;
+    align-items: baseline;
+    justify-content: center;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
     text-decoration: none;
-    align-items: baseline;
-    
-    justify-content: center;
+
 }
-.header__contact__link {
+.header-contact__link {
     color: #757575;
     fill: #757575;
     transition-property: transform;
     transition-duration: 300ms;
 }
-.header__contact__link, .header__contact__tel {
-    display: flex;
-    align-items: center;
-}
-.contact__icon {
-    margin-right: 10px;
-}
-
-
-.header__contact__link:hover,
-.header__contact__link:focus {
+.header-contact__link:hover,
+.header-contact__link:focus {
     color: #2196F3;
     fill: #2196F3;
     transform: scale(1.2);
 }
+.header-contact__link, .header-contact__tel {
+    display: flex;
+    align-items: center;
+}
+.header-contact__icon {
+    margin-right: 10px;
+}
 
 
-/* 2. Hero*/
+/* 2. ===============Hero===============*/
 .hero {
     max-width: 1600px;
     padding-top: 200px;
@@ -197,7 +222,7 @@ color: #2196F3;
     text-transform: uppercase;
 }
 /* 2.1 hero button */
-.hero__button__order {
+.hero__button {
     margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -226,10 +251,7 @@ color: #2196F3;
 }
 
 
-/* 3. content */
-.none {
-    display: none;
-}
+/* 3. ===============content=============== */
 /* 3.1 content plate*/ 
 .content {
     padding-top: 47px ;
@@ -280,7 +302,7 @@ color: #2196F3;
     letter-spacing: 0.03em;
     color: #757575;
 }
-/* 4. Work */
+/* 4. ===============Work=============== */
 .work {
     padding-top: 47px;
     padding-bottom: 94px;
@@ -307,7 +329,7 @@ color: #2196F3;
     z-index: 1;
 }
 
-.work__item > .work__item__label {
+.work__item > .work__label {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -331,12 +353,12 @@ color: #2196F3;
     background-color: rgba(47, 48, 58, 0.8);
     color: #FFFFFF;
 }
-.work__item:hover .work__item__label {
+.work__item:hover .work__label {
     transform: translateY(0);
 }
 
-/* 5. Our team */
-.team__boarder{
+/* 5. ===============Our team=============== */
+.team-section {
     background-color: #F5F4FA;
 }
 .team {
@@ -379,19 +401,19 @@ color: #2196F3;
     line-height: 1.18;
     color: #757575;
 }
-.team__social__link {
+.social-link {
     display: block;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 30px;
 }
-.social__list {
+.social-link__list {
     display: flex;
     justify-content: space-between;
     width: 206px;
     margin: 0px;
 }
-.social__item__link {
+.social-link__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,23 +421,24 @@ color: #2196F3;
     height: 44px;
     border-radius: 50%;
 }
+.social-link__link:hover,
+.social-link__link:focus {
+    background-color: #2196F3;
+}
 
-.social__item__icon {
+.social-link__icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
 }
-.social__item__link:hover,
-.social__item__link:focus {
-    background-color: #2196F3;
-}
-.social__item__link:hover .social__item__icon,
-.social__item__link:focus .social__item__icon {
+
+.social-link__link:hover .social-link__icon,
+.social-link__link:focus .social-link__icon {
     fill: #FFFFFF;
 }
 
-/* 6. CLient */
-.client__border {
+/* =======================6. CLient =======================*/
+.client-section {
     background-color: #FFFFFF;
 }
 .client {
@@ -449,29 +472,29 @@ color: #2196F3;
     transition-property: transform;
     transition-duration: 300ms;
 }
-.client__item__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.client__item__icon {
-    width: 106px;
-    height: 60px;
-    fill: #AFB1B8;
-}
 .client__item:hover,
 .client__item:focus {
     border: 1px solid #2196F3;
     transform: scale(1.1);
 }
-.client__item:hover .client__item__icon,
-.client__item:focus .client__item__icon {
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client__icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+.client__item:hover .client__icon,
+.client__item:focus .client__icon {
     fill: #2196F3;
 }
 
 
-/* footer */
-.footer__boarder {
+/* =====================footer========================== */
+.footer-section {
     background-color: #2F303A;
     margin: 0px;
 }
@@ -480,10 +503,10 @@ color: #2196F3;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer__contacts {
+.footer-contacts {
     display: block;
 }
-.logo__link__footer {
+.logo-link__footer {
     color: #FFFFFF;
     font-family: 'Raleway';
     font-weight: 700;
@@ -492,13 +515,13 @@ color: #2196F3;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-.footer__contacts__list {
+.footer-contacts__list {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     column-gap: 9px;
 }
-.footer__contacts__item {
+.footer-contacts__item {
     margin-bottom: 9px;
     text-decoration: none;
     font-style: normal;
@@ -508,14 +531,14 @@ color: #2196F3;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.footer__contacts__item a {
+.footer-contacts__item a {
     color: rgba(255, 255, 255, 0.6);
 }
-
-.footer__social {
+/* ==================footer social============================ */
+.footer-social-link {
     margin-left: 70px;
 }
-.footer__social__title {
+.footer-social__title {
     margin-top: 12px;
     font-weight: 700;
     font-size: 14px;
@@ -524,13 +547,13 @@ color: #2196F3;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.footer__social__list {
+.footer-social__list {
     display: flex;
     justify-content: space-between;
     width: 206px;
     margin-top: 20px;
 }
-.footer__social__item__link {
+.footer-social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -539,16 +562,17 @@ color: #2196F3;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
-.footer__social__item__icon{
+.footer-social__link:hover,
+.footer-social__link:focus {
+    background: #2196F3;
+}
+.footer-social__icon{
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
 }
-.footer__social__item__link:hover,
-.footer__social__item__link:focus {
-    background: #2196F3;
-}
-.footer__subscribe {
+/* =================footer sub=========================== */
+.footer-subscribe {
     margin-left: 93px;
 
     font-weight: 700;
@@ -559,18 +583,18 @@ color: #2196F3;
     
     color: #FFFFFF;
 }
-.footer__subscribe__wrapper {
+.footer-subscribe__wrapper {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
 }
-.footer__subscribe__form {
+.footer-subscribe__form {
     display: flex;
     gap: 12px;
 }
 
 
-.footer__subscribe__input{
+.footer-subscribe__input{
     width: 358px;
     height: 50px;
 
@@ -591,11 +615,11 @@ color: #2196F3;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.footer__subscribe__input:focus {
+.footer-subscribe__input:focus {
     outline: none;
     border-color: #2196F3;
 }
-.footer__subscribe__button {
+.footer-subscribe__button {
     width: 200px;
     height: 50px;
     
@@ -617,13 +641,13 @@ color: #2196F3;
     
     color: #FFFFFF;
 }
-.footer__button__icon {
+.footer-subscribe__icon {
     width: 24px;
     height: 24px;
     margin-left: 10px;
 }
 
-/* backdrop modal */
+/* =================== backdrop modal================ */
 .backdrop {
     position: fixed;
     top: 0;
@@ -833,28 +857,15 @@ color: #2196F3;
     
     color: #FFFFFF;
 }
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
+/* ====================================================== */
 
 
 
-/* portfolio */
+
+/*==================== portfolio ====================*/
 /* 1. header portfolio*/
 
-/* 2. button */
+/* =====================2. button=================== */
 .button__list {
     padding-top: 100px;
     display: flex;
@@ -883,6 +894,8 @@ color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
+
+/* ===================samples================== */
 .samples {
     padding-bottom: 94px;
 }
@@ -903,13 +916,13 @@ color: #2196F3;
 .samples__item:nth-child(3n) {
     margin-right: 0px;
 }
-.samples__item__wrapper {
+.samples__wrapper {
     position: relative;
     overflow: hidden;
 
     z-index: 1;
 }
-.samples__item__wrapper > .samples__item__label {
+.samples__wrapper > .samples__label {
     position: absolute;
     top: 0;
     left: 0;
@@ -935,7 +948,7 @@ color: #2196F3;
     border: 0px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.samples__item:hover .samples__item__label {
+.samples__item:hover .samples__label {
     transform: translateY(0);
 }
 .samples__subtitle {
@@ -959,3 +972,5 @@ color: #2196F3;
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+/* =========================footer============================= */
