@@ -522,7 +522,6 @@ ul {
     padding-top: 16px;
     padding-bottom: 16px;
     cursor: pointer;
-
     transition-property: transform;
     transition-duration: 300ms;
 }
@@ -540,6 +539,7 @@ ul {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
+    transition: fill var(--transition-property);
 }
 .client__item:hover .client__icon,
 .client__item:focus .client__icon {
@@ -608,6 +608,7 @@ ul {
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-property)
 }
 .footer-social__link:hover,
 .footer-social__link:focus {
