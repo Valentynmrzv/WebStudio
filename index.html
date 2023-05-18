@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" >
+    <link rel="stylesheet" href="./css/styles.css" >
     
 </head>
 
@@ -58,7 +58,7 @@
         
             <section class="hero">
               <div class="hero__title container">
-                <h1 class="hero__subtitle">Эффективные решения<br/>для вашего бизнеса</h1>
+                <h1 class="hero__subtitle">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
               </div>
                
@@ -411,7 +411,7 @@
                     <label for="user_name" class="contact-form__label">
                         Имя
                         <span class="contact-form__wrapper">
-                            <input type="text" name="firstName" class="contact-form__input" autofocus required minlength="4">
+                            <input type="text" name="firstName" class="contact-form__input" id="user_name" autofocus required minlength="4">
                             <svg class="modal-form__icon">
                                 <use href="./images/sprite.svg#icon-user"></use>
                             </svg>
@@ -420,7 +420,7 @@
                     <label for="user_phone" class="contact-form__label">
                       Телефон
                         <span class="contact-form__wrapper">
-                            <input type="tel" name="phone" class="contact-form__input" autofocus required
+                            <input type="tel" name="phone" class="contact-form__input" id="user_phone" required
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-000-00-00">
                             <svg class="modal-form__icon" width="12" height="12">
                                 <use href="./images/sprite.svg#icon-phone"></use>
@@ -430,7 +430,7 @@
                     <label for="user_email" class="contact-form__label">
                         Почта
                         <span class="contact-form__wrapper">
-                            <input type="email" name="email" class="contact-form__input" autofocus />
+                            <input type="email" name="email" class="contact-form__input" id="user_email">
                             <svg class="modal-form__icon" width="12" height="12">
                                 <use href="./images/sprite.svg#icon-email"></use>
                             </svg>
@@ -438,9 +438,9 @@
                     </label>
                     <label for="user_text" class="contact-form__label">
                         Комментарий
-                        <textarea name="user-message" class="contact-form__massege" placeholder="Введите текст"></textarea>
+                        <textarea name="user-message" class="contact-form__massege" placeholder="Введите текст" id="user_text"></textarea>
                     </label>
-                    <input type="checkbox" name="user-term" id="user-term" value="" class="modal-form-term visually-hidden"/>
+                    <input type="checkbox" name="user-term" id="user-term" value="" class="modal-form-term visually-hidden">
                     <label for="user-term" class="modal-form-checkbox">
                         Соглашаюсь с рассылкой и принимаю &nbsp;<a href="">Условия договора</a>
                     </label>
