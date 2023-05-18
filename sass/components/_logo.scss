@@ -1,0 +1,52 @@
+.logo-link {
+    cursor: default;
+    color: #000000;
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-link__footer {
+    color: #FFFFFF;
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-link:hover {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.10)
+    }
+
+    50% {
+        transform: scale(1.20);
+    }
+
+    75% {
+        transform: scale(1.10)
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo-link__accent {
+    color: var(--brand-color);
+}

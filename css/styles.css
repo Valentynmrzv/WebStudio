@@ -24,7 +24,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-
 img {
     display: block;
     max-width: 100%;
@@ -127,11 +126,7 @@ ul {
     width: 1px !important;
     overflow: hidden;
 }
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+
 /* ============================================================ */
 
 /* 1. ===============header=============== */
@@ -684,7 +679,7 @@ ul {
 
     transition: all 400ms linear;
 }
-
+/* ========================modal========================= */
 .modal {
     width: 528px;
     height: 581px;
@@ -877,6 +872,11 @@ ul {
     letter-spacing: 0.06em;
     
     color: #FFFFFF;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 /* ====================================================== */
 
