@@ -709,6 +709,7 @@ ul {
 
     text-align: center;   
 }
+/* =========================form===================== */
 .modal-form {
     display: flex;
     flex-direction: column;
