@@ -661,7 +661,7 @@ ul {
   color: #757575;
 }
 
-.work {
+.work-section {
   padding-top: 47px;
   padding-bottom: 94px;
 }
@@ -722,12 +722,9 @@ ul {
           transform: translateY(0);
 }
 
-.team {
+.team-section {
   background-color: #F5F4FA;
   background-position: center;
-}
-
-.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
