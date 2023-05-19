@@ -148,6 +148,16 @@
     letter-spacing: 0.06em;
 
     color: #FFFFFF;
+
+    transition: transform var(--transition-property);
+}
+.footer-subscribe__button:hover {
+    background-color: #0981e4;
+}
+.footer-subscribe__button:active {
+    background-color: #0981e4;
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
 }
 
 .footer-subscribe__icon {
