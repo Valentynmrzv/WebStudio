@@ -15,10 +15,8 @@
 
     &__subtitle {
         color: #FFFFFF;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
+
+        @include font($fw: 900, $fs: 44px, $lh: 60px, $ls: 0.06em);
         text-transform: uppercase;
     }
         /* 2.1 hero button */
@@ -36,10 +34,8 @@
         cursor: pointer;
     
         color: #FFFFFF;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.06em;
+        @include font($fw: 700, $fs: 16px, $lh: 30px, $ls: 0.06em);
+      
         transition-property: transform;
         transition-duration: 300ms;
 

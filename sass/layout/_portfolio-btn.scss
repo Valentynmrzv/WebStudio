@@ -14,11 +14,10 @@
         padding-right: 22px;
         background-color: #F5F4FA;
         color: var(--secondary-text-color);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
+
+        @include font($fw: 500, $fs: 16px, $lh: 26px);
         text-align: center;
-        letter-spacing: 0.03em;
+        
         border-radius: 4px;
         border: 0;
 

@@ -10,11 +10,9 @@
 
     &__title {
         margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+
+        @include font($fw: 700, $fs: 36px, $lh: 42px);
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--title-text-color);
     }
 
@@ -35,17 +33,15 @@
     &__subtitle {
         padding-top: 30px;
         padding-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
+        @include font($fw: 500, $fs: 16px, $lh: 19px);
+      
         color: var(--title-text-color);
     }
 
     &__text {
         margin-bottom: 16px;
-    
-        font-size: 16px;
-        line-height: 1.18;
+        
+        @include font($fs: 16px, $lh: 19px);
         color: var(--primary-text-color);
     }
 }

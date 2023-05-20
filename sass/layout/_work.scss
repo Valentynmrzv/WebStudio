@@ -6,11 +6,9 @@
 .work {
     &__title {
         margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+
+        @include font($fw: 700, $fs: 36px, $lh: 42px);
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--title-text-color);
     }
 

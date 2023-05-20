@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     padding-top: 30px;
     padding-bottom: 30px;
@@ -80,9 +80,11 @@
 }
 /* =================footer sub=========================== */
 .footer-subscribe {
+    margin-top: 17px;
     margin-left: 93px;
 
     &__title {
+        @include font($fw: 700, $lh: 16px);
         font-weight: 700;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -101,6 +103,8 @@
     }
 
     &__input {
+        display: flex;
+        align-items: center;
         width: 358px;
         height: 50px;
     
@@ -111,13 +115,8 @@
         border-radius: 4px;
         background-color: #2F303A;
     
-        font-size: 16px;
-        line-height: 20px;
-        /* identical to box height, or 125% */
-    
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
+        @include font($fs: 16px, $lh: 20px);
+
         color: #FFFFFF;
 
         &:focus,
@@ -130,24 +129,20 @@
     &__button {
         width: 200px;
         height: 50px;
-    
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
         background-color: var(--brand-color);
         border: 0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
     
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-        /* identical to box height, or 188% */
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-    
-        color: #FFFFFF;
+        @include font($fw: 700, $fs: 16px, $lh: 30px, $ls: 0.06em);
+
+            color: #FFFFFF;
     
         transition: transform var(--transition-property);
 
