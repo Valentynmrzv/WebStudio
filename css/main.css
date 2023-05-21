@@ -530,8 +530,8 @@ ul {
 .header-contact__link:hover, .header-contact__link:focus {
   color: var(--brand-color);
   fill: var(--brand-color);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .header-contact__icon {
   margin-right: 10px;
