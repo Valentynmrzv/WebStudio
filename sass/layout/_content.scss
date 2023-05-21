@@ -1,7 +1,9 @@
 .content {
     padding-top: 47px;
     padding-bottom: 47px;
+}
 
+.priority {
     &__list {
         display: flex;
         flex-wrap: nowrap;

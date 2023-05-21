@@ -1,12 +1,13 @@
 .footer {
-    display: flex;
-    align-items: flex-start;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-color: #2F303A;
     background-position: center;
+}
+.footer-wrapper {
+    display: flex;
+    align-items: flex-start;
 }
 /* =========================footer contacts============================== */
 .footer-contacts {

@@ -1,8 +1,21 @@
-.logo-link {
+.logo {
     cursor: default;
-    color: #000000;
     font-family: var(--logo-font-family);
     @include font(700, 26px, 31px, 0.03em);
+    text-decoration: none;
+
+    &_theme {
+
+        &_light {
+            color: #000000;
+        }
+        &_dark {
+            color: #FFFFFF;
+        }
+    }
+    &__accent {
+        color: var(--brand-color);
+    }
 
     &:hover {
         animation-name: pulse;
@@ -32,16 +45,4 @@
     100% {
         transform: scale(1);
     }
-}
-.logo-link__footer {
-    color: #FFFFFF;
-    font-family: var(--logo-font-family);
-    @include font(700, 26px, 31px, 0.03em);
-    text-decoration: none;
-}
-
-
-
-.logo-link__accent {
-    color: var(--brand-color);
 }

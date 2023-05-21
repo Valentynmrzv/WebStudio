@@ -1,17 +1,15 @@
 .header {
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
-.section-header {
+.header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 /* 1.1 header navigation */
-.header-nav {
+.nav {
     display: flex;
     justify-content: space-evenly;
 

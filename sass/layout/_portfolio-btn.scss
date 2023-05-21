@@ -1,10 +1,13 @@
+.portfolio-button {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 .button {
     &__list {
-    padding-top: 100px;
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 56px;
+    
     }
 
     &__btn {

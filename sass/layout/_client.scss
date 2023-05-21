@@ -1,9 +1,11 @@
-.client {
+.customers {
     background-color: #FFFFFF;
     background-position: center;
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.client {
     &__title {
         margin-bottom: 50px;
         @include font($fw: 700, $fs: 36px, $lh: 42px, $ls: 0.03em);
@@ -35,10 +37,6 @@
             border: 1px solid var(--brand-color);
             transform: scale(1.1);
         }
-        &:hover .client__icon,
-        &:focus .client__icon {
-            fill: var(--brand-color);
-        }
     }
 
     &__link {
@@ -52,5 +50,11 @@
         height: 60px;
         fill: #AFB1B8;
         transition: fill var(--transition-property);
+
+        .client__item:hover &,
+        .client__item:focus & {
+            fill: var(--brand-color);
+        }
+
     }
 }
