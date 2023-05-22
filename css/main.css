@@ -185,6 +185,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform 250ms linear;
@@ -205,21 +208,65 @@ ul {
   width: 40px;
   height: 40px;
 }
+.mobile-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
 
 .is-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.mobil-social__list {
+.mobile-contact__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
 }
-.mobil-social__link {
+.mobile-contact__item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+}
+.mobile-contact__tel {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+.mobile-contact__mail {
+  color: var(--primary-text-color);
+}
+
+.mobile-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mobile-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,12 +279,10 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color var(--transition-property);
-  transition: background-color var(--transition-property);
+  border: 1px solid var(--brand-color);
 }
-.mobil-social__icon {
-  width: 20px;
-  height: 20px;
+.mobile-social__icon {
+  width: 27px;
+  height: 27px;
   fill: var(--brand-color);
 }/*# sourceMappingURL=main.css.map */
