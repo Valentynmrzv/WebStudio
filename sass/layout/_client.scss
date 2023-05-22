@@ -1,28 +1,27 @@
 .customers {
     background-color: #FFFFFF;
     background-position: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
-
 .client {
+    margin-top: 60px;
+    margin-bottom: 60px;
     &__title {
-        margin-bottom: 50px;
         @include font($fw: 700, $fs: 36px, $lh: 42px, $ls: 0.03em);
 
         text-align: center;
-    
+
         color: var(--title-text-color);
     }
 
     &__list {
+        margin-top: 30px;
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
     }
 
     &__item {
         display: block;
-        max-width: 170px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         padding-left: 32px;
@@ -30,12 +29,16 @@
         padding-top: 16px;
         padding-bottom: 16px;
         cursor: pointer;
-        transition-property: transform;
-        transition-duration: 300ms;
+       
+        width: calc((100% - 30px) / 2);
+        
+            &:nth-child(2n) {
+                margin-right: 0px;
+            }
+
         &:hover,
         &:focus {
             border: 1px solid var(--brand-color);
-            transform: scale(1.1);
         }
     }
 
@@ -56,5 +59,41 @@
             fill: var(--brand-color);
         }
 
+    }
+}
+// ===========================768px================================================
+@media screen and (min-width: 768px) {
+    .client {
+        &__item {
+            width: calc((100% - 60px) / 3);
+    
+            &:nth-child(3n) {
+                margin-right: 0px;
+            }
+    
+        }
+    }
+}
+
+// ===========================1200px================================================
+@media screen and (min-width: 1200px) {
+    .client {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    
+
+        &__item {
+            transition-property: transform;
+            transition-duration: 300ms;
+            width: calc((100% - 150px) / 6);
+            
+            &:nth-child(6n) {
+                margin-right: 0px;
+            }
+            &:hover,
+            &:focus {
+                transform: scale(1.1);
+            }
+        }
     }
 }

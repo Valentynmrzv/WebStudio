@@ -71,6 +71,7 @@ ul {
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -809,5 +810,100 @@ ul {
   .social-link {
     display: block;
     margin-bottom: 30px;
+  }
+}
+.customers {
+  background-color: #FFFFFF;
+  background-position: center;
+}
+
+.client {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.client__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.client__list {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.client__item {
+  display: block;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  width: calc((100% - 30px) / 2);
+}
+.client__item:nth-child(2n) {
+  margin-right: 0px;
+}
+.client__item:hover, .client__item:focus {
+  border: 1px solid var(--brand-color);
+}
+.client__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.client__icon {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+  -webkit-transition: fill var(--transition-property);
+  transition: fill var(--transition-property);
+}
+.client__item:hover .client__icon, .client__item:focus .client__icon {
+  fill: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .client__item {
+    width: calc((100% - 60px) / 3);
+  }
+  .client__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+  .client__item {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+    width: calc((100% - 150px) / 6);
+  }
+  .client__item:nth-child(6n) {
+    margin-right: 0px;
+  }
+  .client__item:hover, .client__item:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }/*# sourceMappingURL=main.css.map */
