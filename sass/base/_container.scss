@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+}
 .container {
-    width: 480px;
+    min-width: 320px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
+
+    outline: 1px solid green;
 }
+
 @media screen and (min-width: 480px) {
     .container {
         width: 480px;
@@ -12,15 +17,44 @@
 }
 
 @media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
     .container {
         width: 768px;
     }
 }
+
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
     }
 }
+
+// .container {
+//     width: 320px;
+//     margin: 0 auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     outline: 1px solid red;
+// }
+// @media screen and (min-width: 480px) {
+//     .container {
+//         width: 480px;
+//     }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .container {
+//         width: 768px;
+//     }
+// }
+// @media screen and (min-width: 1200px) {
+//     .container {
+//         width: 1200px;
+//     }
+// }
 // .container {
 //     width: 1200px;
 //     margin: 0 auto;

@@ -1,15 +1,16 @@
-// @import './utils/mixin';
-// @import './utils/variables';
-// @import './utils/visually-hidden';
-// @import './base/common';
-// @import './base/section';
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './base/common';
+@import './base/section';
 @import './base/container';
-// @import './components/logo';
+@import './components/logo';
+
 // @import './components/backdrop';
 // @import './components/modal';
 // @import './components/modal-form';
-@import './layout/header';
 
+@import './layout/header';
 // @import './layout/hero';
 // @import './layout/content';
 // @import './layout/work';
