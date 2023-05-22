@@ -1,49 +1,93 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-bottom: 47px;
     background: rgba(47, 48, 58, 0.4);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/desktop/hero.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
 }
-
 .order {
     display: block;
     text-align: center;
-    
-        &__title {
-            color: #FFFFFF;
 
-            @include font($fw: 900, $fs: 44px, $lh: 60px, $ls: 0.06em);
-            text-transform: uppercase;
+    padding-top: 118px;
+    padding-bottom: 118px ;
+
+    &__title {
+        color: #FFFFFF;
+
+        @include font($fw: 900, $fs: 26px, $lh: 42px, $ls: 0.06em);
+        text-transform: uppercase;
+    }
+    &__button {
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        border: 0;
+        background: var(--brand-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        cursor: pointer;
+
+        color: #FFFFFF;
+        @include font($fw: 700, $fs: 16px, $lh: 30px, $ls: 0.06em);
+
+        transition-property: transform;
+        transition-duration: 300ms;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
         }
-        /* 2.1 hero button */
-        &__button {
-            margin-top: 30px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 32px;
-            padding-right: 32px;
-
-            border: 0;
-            background: var(--brand-color);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            cursor: pointer;
-    
-            color: #FFFFFF;
-            @include font($fw: 700, $fs: 16px, $lh: 30px, $ls: 0.06em);
-      
-            transition-property: transform;
-            transition-duration: 300ms;
-
-            &:hover,
-            &:focus {
-                transform: scale(1.1);
-            }
-        }   
+    }
 }
 
+
+// ===========================1200px================================================
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        margin-bottom: 47px;
+    
+    }
+
+    // .order {
+    //     display: block;
+    //     text-align: center;
+        
+        // &__title {
+        //     color: #FFFFFF;
+        //     @include font($fw: 900, $fs: 44px, $lh: 60px, $ls: 0.06em);
+        //     text-transform: uppercase;
+        // }
+        // /* 2.1 hero button */
+        // &__button {
+        //     margin-top: 30px;
+        //     padding-top: 10px;
+        //     padding-bottom: 10px;
+        //     padding-left: 32px;
+        //     padding-right: 32px;
+
+        //     border: 0;
+        //     background: var(--brand-color);
+        //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        //     border-radius: 5px;
+        //     cursor: pointer;
+    
+        //     color: #FFFFFF;
+        //     @include font($fw: 700, $fs: 16px, $lh: 30px, $ls: 0.06em);
+    
+        //     transition-property: transform;
+        //     transition-duration: 300ms;
+
+        //     &:hover,
+        //     &:focus {
+        //         transform: scale(1.1);
+        //     }
+        // }   
+    }
+}
 

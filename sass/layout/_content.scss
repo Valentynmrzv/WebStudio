@@ -1,53 +1,58 @@
-.content {
-    padding-top: 47px;
-    padding-bottom: 47px;
-}
 
-.priority {
-    &__list {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 30px;
+
+// ===========================1200px================================================
+@media screen and (min-width: 1200px) {
+    .content {
+        padding-top: 47px;
+        padding-bottom: 47px;
     }
 
-    &__item {
-        display: block;
-        width: calc((100% - 90px) / 4);
-        
-        &:nth-child(4n) {
-            margin-right: 0px;
+    .priority {
+        &__list {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px;
         }
-    }
 
-    &__icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        width: 270px;
-        height: 120px;
-    
-        margin-bottom: 30px;
-        object-fit: none;
-        border-radius: 4px;
-        background: #F5F4FA;
-    }
+        &__item {
+            display: block;
+            width: calc((100% - 90px) / 4);
+            
+            &:nth-child(4n) {
+                margin-right: 0px;
+            }
+        }
 
-    &__subtitle {
-        margin-top: 0;
-        margin-bottom: 10px;
-    
-        font-weight: 700;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-    
-        color: var(--title-text-color);
-    }
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            width: 270px;
+            height: 120px;
+        
+            margin-bottom: 30px;
+            object-fit: none;
+            border-radius: 4px;
+            background: #F5F4FA;
+        }
 
-    &__text {
-        padding: 0;
-        margin: 0;
-        letter-spacing: 0.03em;
-        color: #757575;
+        &__subtitle {
+            margin-top: 0;
+            margin-bottom: 10px;
+        
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        
+            color: var(--title-text-color);
+        }
+
+        &__text {
+            padding: 0;
+            margin: 0;
+            letter-spacing: 0.03em;
+            color: #757575;
+        }
     }
 }
