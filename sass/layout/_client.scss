@@ -86,39 +86,3 @@
 
     }
 }
-// ===========================768px================================================
-// @media screen and (min-width: 768px) {
-//     .client {
-//         &__item {
-//             width: calc((100% - 60px) / 3);
-    
-//             &:nth-child(3n) {
-//                 margin-right: 0px;
-//             }
-    
-//         }
-//     }
-// }
-
-// ===========================1200px================================================
-// @media screen and (min-width: 1200px) {
-//     .client {
-//         margin-top: 94px;
-//         margin-bottom: 94px;
-    
-
-//         &__item {
-//             transition-property: transform;
-//             transition-duration: 300ms;
-//             width: calc((100% - 150px) / 6);
-            
-//             &:nth-child(6n) {
-//                 margin-right: 0px;
-//             }
-//             &:hover,
-//             &:focus {
-//                 transform: scale(1.1);
-//             }
-//         }
-//     }
-// }

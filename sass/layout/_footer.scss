@@ -10,17 +10,33 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 0;
+    }
   
 }
 .footer-contacts-wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px){
+        gap: 70px;
+    }
 }
 .footer-contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+    }
 
     &__list {
         margin-top: 20px;
@@ -28,6 +44,10 @@
         flex-direction: column;
         align-items: center;
         gap: 8px;
+
+        @media screen and (min-width: 1200px) {
+            align-items: flex-start;
+        }
     }
     &__item {
         text-decoration: none;
@@ -50,6 +70,10 @@
         @include font($fw: 700, $lh: 16px);
         text-transform: uppercase;
         color: #FFFFFF;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+        align-items: flex-start;
     }
 }
 .footer-social {
@@ -85,6 +109,20 @@
 
 /* =================footer sub=========================== */
 .footer-subscribe {
+    @media screen and (min-width: 1200px) {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+        display: flex;
+        margin-top: 0;
+        padding-top: 12px;
+    }
 
     &__title {
         @include font($fw: 700, $lh: 16px);
@@ -97,6 +135,10 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 12px;
+        }
     }
     &__input {
         width: 100%;
@@ -119,6 +161,13 @@
         &:hover {
             outline: none;
             border-color: var(--brand-color);
+        }
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            width: 358px;
         }
     }
     &__button {
@@ -158,149 +207,3 @@
         margin-left: 10px;
     }
 }
-// ===========================768px================================================
-@media screen and (min-width: 768px) {
-    .footer-contacts-wrapper {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .footer-subscribe {
-        &__input {
-            width: 450px;
-        }
-    }
-    .footer-social-link {
-        margin-top: 0;
-    }
-}
-
-// ===========================1200px================================================
-@media screen and (min-width: 1200px) {
-    .footer-wrapper {
-        flex-direction: row;
-        gap: 0;
-    }
-    .footer-contacts-wrapper {
-        gap: 70px;
-    }
-    .footer-contacts {
-        align-items: flex-start;
-        &__list {
-            align-items: flex-start;
-        }
-    }
-    .footer-social-link {
-        padding-top: 12px;
-        align-items: flex-start;
-    }
-    .footer-subscribe {
-        margin-left: 93px;
-        display: flex;
-        margin-top: 0;
-        padding-top: 12px;
-
-        &__wrapper {
-            flex-direction: row;
-            gap: 12px;
-        }
-
-        &__form {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        &__input {
-            // display: flex;
-            // align-items: center;
-            margin-top: 0;
-            width: 358px;
-        }
-    }
-
-
-}
-//     .footer {
-//         display: flex;
-//     }
-//     .footer-wrapper {
-//         display: flex;
-//         margin-left: 200px;
-//         align-items: flex-start;
-//         gap: 70px;
-//     }
-    /* =========================footer contacts============================== */
-//     .footer-contacts {
-//         display: block;
-
-//         &__list {
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-start;
-//             column-gap: 9px;
-//         }
-
-//         &__item {
-//             margin-bottom: 9px;
-//             text-decoration: none;
-//             font-style: normal;
-//             letter-spacing: 0.03em;
-//             color: #FFFFFF;
-            
-
-//             a {
-//             color: rgba(255, 255, 255, 0.6);
-//             }
-//         }
-
-
-//     }
-
-//     /* ==================footer social============================ */
-//     .footer-social-link {
-//             align-items: flex-start;
-//             padding-top: 12px;
-
-//         &__title {
-//             margin-top: 0;
-//             @include font($fw: 700, $lh: 16px);
-//             text-transform: uppercase;
-//             color: #FFFFFF;
-//         }
-
-//     }
-//     .footer-social {
-//         &__list {
-//             display: flex;
-//             justify-content: space-between;
-//             width: 206px;
-//             margin-top: 20px;
-//         }
-
-//         &__link {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             width: 44px;
-//             height: 44px;
-//             border-radius: 50%;
-//             background: rgba(255, 255, 255, 0.1);
-//             transition: background-color var(--transition-property);
-
-//             &:hover,
-//             &:focus {
-//                 background: var(--brand-color);
-//             }
-//         }
-
-//         &__icon {
-//             width: 20px;
-//             height: 20px;
-//             fill: #FFFFFF;
-//         }
-//     }
-//     /* =================footer sub=========================== */
-//     
-// }
