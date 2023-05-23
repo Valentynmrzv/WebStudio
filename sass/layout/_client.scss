@@ -5,6 +5,10 @@
 .client {
     margin-top: 60px;
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
     &__title {
         @include font($fw: 700, $fs: 36px, $lh: 42px, $ls: 0.03em);
 
@@ -40,6 +44,27 @@
         &:focus {
             border: 1px solid var(--brand-color);
         }
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+        
+            &:nth-child(3n) {
+                margin-right: 0px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            transition-property: transform;
+            transition-duration: 300ms;
+            width: calc((100% - 150px) / 6);
+        
+            &:nth-child(6n) {
+                margin-right: 0px;
+            }
+        
+            &:hover,
+            &:focus {
+                transform: scale(1.1);
+            }
+        }
     }
 
     &__link {
@@ -62,38 +87,38 @@
     }
 }
 // ===========================768px================================================
-@media screen and (min-width: 768px) {
-    .client {
-        &__item {
-            width: calc((100% - 60px) / 3);
+// @media screen and (min-width: 768px) {
+//     .client {
+//         &__item {
+//             width: calc((100% - 60px) / 3);
     
-            &:nth-child(3n) {
-                margin-right: 0px;
-            }
+//             &:nth-child(3n) {
+//                 margin-right: 0px;
+//             }
     
-        }
-    }
-}
+//         }
+//     }
+// }
 
 // ===========================1200px================================================
-@media screen and (min-width: 1200px) {
-    .client {
-        margin-top: 94px;
-        margin-bottom: 94px;
+// @media screen and (min-width: 1200px) {
+//     .client {
+//         margin-top: 94px;
+//         margin-bottom: 94px;
     
 
-        &__item {
-            transition-property: transform;
-            transition-duration: 300ms;
-            width: calc((100% - 150px) / 6);
+//         &__item {
+//             transition-property: transform;
+//             transition-duration: 300ms;
+//             width: calc((100% - 150px) / 6);
             
-            &:nth-child(6n) {
-                margin-right: 0px;
-            }
-            &:hover,
-            &:focus {
-                transform: scale(1.1);
-            }
-        }
-    }
-}
+//             &:nth-child(6n) {
+//                 margin-right: 0px;
+//             }
+//             &:hover,
+//             &:focus {
+//                 transform: scale(1.1);
+//             }
+//         }
+//     }
+// }

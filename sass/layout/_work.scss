@@ -1,17 +1,11 @@
-// ====================480px  786px============================================
 .work {
     display: none;
-}
 
-
-
-// ===========================1200px================================================
-@media screen and (min-width: 1200px) {
-    .work {
+    @media screen and (min-width: 1200px) {
         display: block;
         margin-top: 94px;
     }
-    /* 4.1 work title */
+        /* 4.1 work title */
     .box {
         &__title {
             margin-bottom: 50px;
@@ -60,4 +54,5 @@
             }
         }
     }
+
 }

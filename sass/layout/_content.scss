@@ -1,15 +1,40 @@
 .content {
     margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+    }
 }
 .priority {
     &__list {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__item {
         display: block;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+
+            &:nth-child(2n) {
+            margin-right: 0px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+
+            &:nth-child(4n) {
+                margin-right: 0px;
+            }
+        }
     }
 
     &__icon {
@@ -35,55 +60,8 @@
         text-transform: uppercase;
 
         color: var(--title-text-color);
-    }
-
-    &__text {
-        // padding: 0;
-        // margin: 0;
-    }
-}
-// ===========================768px======================================================
-@media screen and (min-width: 768px) {
-    .priority {
-        &__list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        &__item {
-            width: calc((100% - 30px) / 2);
-
-            &:nth-child(2n) {
-                margin-right: 0px;
-            }
-        }
-        &__subtitle {
-            text-align: start;
-        }
-    }
-}
-
-// ===========================1200px================================================
-@media screen and (min-width: 1200px) {
-    .content {
-        margin-top: 94px;
-    }
-
-    .priority {
-        &__list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-        }
-
-        &__item {
-            display: block;
-            width: calc((100% - 90px) / 4);
-            
-            &:nth-child(4n) {
-                margin-right: 0px;
-            }
+        @media screen and (min-width: 768px) {
+        text-align: start;
         }
     }
 }
