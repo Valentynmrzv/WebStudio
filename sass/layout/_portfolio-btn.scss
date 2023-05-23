@@ -1,15 +1,28 @@
 .portfolio-button {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
 }
 .button {
     &__list {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: start;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
     
     }
-
+    &__item {
+        margin-right: 8px;
+        margin-bottom: 15px;
+    }
     &__btn {
         padding-top: 6px;
         padding-bottom: 6px;
