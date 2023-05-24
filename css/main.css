@@ -550,7 +550,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .current::after {
-    top: 47px;
+    top: 46px;
   }
 }
 
