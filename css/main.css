@@ -200,6 +200,10 @@ ul {
   cursor: pointer;
 }
 
+.backdrop-close {
+  cursor: default;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
