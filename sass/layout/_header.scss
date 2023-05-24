@@ -108,13 +108,17 @@
             color: #757575;
             fill: #757575;
             transition: color var(--transition-property);
+            transition-property: transform;
+            transition-duration: 300ms;
             
 
             &:hover,
             &:focus {
                 color: var(--brand-color);
                 fill: var(--brand-color);
-                
+                @media screen and (min-width: 1200px) {
+                    transform: scale(1.1);
+                }
             }
         }
     }
