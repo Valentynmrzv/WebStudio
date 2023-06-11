@@ -93,10 +93,10 @@
     justify-content: center;
     }
     @media screen and (min-width: 768px) {
-        @include font($fs: 12px, $lh: 14px);
+        @include font($fs: 11px, $lh: 12px);
     }
     @media screen and (min-width: 1200px) {
-        @include font($fs: 14px, $lh: 24px);
+        @include font($fs: 12px, $lh: 24px);
     }
     &:hover {
         color: var(--brand-color);
@@ -129,10 +129,10 @@
     @include font($fs: 10px, $lh: 12px, $ls: 0.01em);
     text-decoration: underline;
     @media screen and (min-width: 768px) {
-        @include font($fs: 12px, $lh: 14px);
+        @include font($fs: 10px, $lh: 12px);
     }
     @media screen and (min-width: 1200px) {
-       @include font($fs: 14px, $lh: 24px);
+       @include font($fs: 12px, $lh: 24px);
     }
 }
 .button-form {
